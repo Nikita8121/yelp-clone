@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run API (NestJS)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm run start:api",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run Web (Next.js)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm run start:web",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run Dashboard (Vite)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm run start:dashboard",
+      "cwd": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run All Apps",
+      "configurations": [
+        "Run API (NestJS)",
+        "Run Web (Next.js)",
+        "Run Dashboard (Vite)"
+      ]
+    }
+  ]
+}

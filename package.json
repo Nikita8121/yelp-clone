@@ -1,0 +1,21 @@
+{
+  "name": "yelp-clone-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky",
+    "start:api": "turbo run dev --filter=api",
+    "start:dashboard": "turbo run dev --filter=dashboard",
+    "start:web": "turbo run dev --filter=web"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.0.0",
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
