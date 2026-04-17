@@ -9,7 +9,9 @@
     "prepare": "husky",
     "start:api": "turbo run dev --filter=api",
     "start:dashboard": "turbo run dev --filter=dashboard",
-    "start:web": "turbo run dev --filter=web"
+    "start:web": "turbo run dev --filter=web",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
   },
   "devDependencies": {
     "husky": "^9.1.7",
