@@ -1,0 +1,14 @@
+{
+  "name": "@repo/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./nextjs.json": "./nextjs.json",
+    "./node.json": "./node.json",
+    "./react-vite.json": "./react-vite.json",
+    "./base.json": "./base.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
